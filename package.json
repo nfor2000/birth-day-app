@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "tailwind":"npx tailwindcss -i ./src/input.css -o ./public/css/index.css --watch"
   },
   "author": "Presly",
