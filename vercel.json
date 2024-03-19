@@ -1,6 +1,6 @@
 {
      "version": 2,
-     "builds": [
+     "vercel-build": [
        { "src": "package.json", "use": "@vercel/node" }
      ],
      "routes": [
