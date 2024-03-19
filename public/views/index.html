@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Birthday</title>
+     <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body class="bg-white text-black ">
+     <header class="bg-teal-700 text-white shadow-lg px-5 sticky top-0 z-10">
+          <section class="max-w-4xl mx-auto flex justify-between items-center py-4">
+               <h1 class="text-xl">🎉 Its My Birth Day</h1>
+               <button type="button" class="open-menu text-2xl sm:hidden">☰</button>
+               <nav class="transition-all transform translate-x-full sm:translate-x-0 fixed top-16 h-full flex items-center right-0 w-8/12 bg-teal-700 flex-col  gap-5 sm:flex-row sm:p-0  sm:static p-5 sm:w-auto">
+                    <a href="#home" class="text-xl hover:text-yellow-400">Home</a>
+                    <a href="#about" class="text-xl hover:text-yellow-400">About Me</a>
+                    <a href="#mywish" class="text-xl hover:text-yellow-400">My Wish</a>
+                    <a href="#contact" class="text-xl hover:text-yellow-400">Say a word</a>
+               </nav>
+          </section>
+     </header>
+     <main class="p-5">
+          <section id="home" class="max-w-4xl mx-auto flex justify-between items-center py-10">
+               <div class="flex items-center gap-5 sm:flex-row flex-col">
+                    <article class="flex flex-col items-center gap-5 sm:items-start sm:w-1/2">
+                         <h1 class=" text-2xl sm:text-3xl text-teal-700">Happy birthday to me! 🎉🎂</h1>
+                         <p class="text-center text-xl sm:text-start ">Join me in giving thanks to God Almighty for granting me this privilege.
+                         </p>
+                         <a href="#about" class="block w-max px-6 py-3 bg-teal-700 text-white rounded-lg border-2 border-teal-700 hover:bg-white hover:text-teal-700">About me</a>
+                    </article>
+                    <div class="sm:w-1/2">
+                         <img src="../images/birthDay.png" alt="" class="w-full">
+                    </div>
+               </div>
+          </section>
+          <section id="about" class="max-w-4xl mx-auto py-10">
+               <h2 class="mb-4 uppercase text-center text-2xl font-bold relative after:content-[''] after:absolute after:w-44 after:h-1 after:bg-teal-700 after:-bottom-1 after:left-1/2 after:transform after:-translate-x-1/2">About Me</h2>
+               <div class="flex items-center gap-10 sm:flex-row-reverse flex-col">
+                    <article class="flex flex-col items-center gap-5 sm:items-start sm:w-1/2">
+                         <address class="text-center sm:text-start">
+                              <h2>Name:Nfor Presly Takop</h2>
+                              Date of Birth: 19<sup>th</sup> March 2003<br>
+                              Student in the College of Technology University of Buea <br/>
+                              Email: <a class="text-teal-700 underline"  href="mailto:takoppresly@gmail.com">takoppresly@gmail.com</a><br>
+                              Phone: <a class="text-teal-700 underline" href="tel:+273653532934">653532934</a>
+                         </address> 
+                    </article>
+                    <div class="sm:w-1/2 py-5">
+                         <img src="../images/me.jpg" alt="" class="w-full">
+                    </div>
+               </div>
+          </section>
+          <section id="mywish" class="max-w-4xl mx-auto py-10">
+               <h2 class="mb-4 uppercase text-center text-2xl font-bold relative after:content-[''] after:absolute after:w-44 after:h-1 after:bg-teal-700 after:-bottom-1 after:left-1/2 after:transform after:-translate-x-1/2">My Wish</h2>
+               <div class="flex flex-col gap-5 max-w-lg  mx-auto items-center sm:shadow-lg shadow-slate-300 sm:p-10">
+                    <img src="../images/img1.png" class="block h-52 w-52 rounded-full border-l-8 border-blue-300"
+                         alt="">
+                    <figure class="">
+                         <blockquote class=" bg-teal-700 pl-14 pr-8 py-12 rounded-3xl relative">
+                              <p class="text-lg text-left text-white before:content-['\201C'] before:font-serif before:absolute before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 before:top-0 before:left-0 after:content-['\201D'] after:font-serif after:absolute after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2 after:-bottom-20 after:right-0">
+                                   I can only imagine the immense joy that filled your hearts on this faithful day, 21 years ago. It has been a remarkable journey, and we are truly grateful for the Lord's blessings upon us. Today, I pray that the good Lord will continue to inspire me to be a source of endless joy and happiness in your lives for as long as we are granted on this earth. Thank you for everything you have done for me, with all my love as your firstborn son. 
+                              </p>
+                              </p>
+                         </blockquote>
+                         <figcaption
+                              class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+                              &#8212;Nfor Presly Takop
+                    </figure>
+               </div>
+          </section>
+
+          <section class="max-w-4xl mx-auto py-10" id="contact">
+               <h2 class="mb-4 uppercase text-center text-2xl font-bold relative after:content-[''] after:absolute after:w-44 after:h-1 after:bg-teal-700 after:-bottom-1 after:left-1/2 after:transform after:-translate-x-1/2">Say a Word</h2>
+               <form action="/web/sendmail" id="form" class="max-w-md mx-auto flex flex-col gap-4 p-4">
+                    <div class="flex flex-col gap-2 ">
+                         <label for="name" class="text-xl">Name:</label>
+                         <input type="text" required name="name" id="name" placeholder="Your Name" class="outline-teal-700 w-full border border-slate-300 py-2 pl-5 text-xl rounded-sm">
+                    </div>
+                    <div class="flex flex-col gap-2 ">
+                         <label for="email" class="text-xl">Email:</label>
+                         <input type="email" required name="email" id="email" placeholder="Your Email" class="outline-teal-700 w-full border border-slate-300 py-2 pl-5 text-xl rounded-sm">
+                    </div>
+                    <div class="flex flex-col gap-2 ">
+                         <label for="wish" class="text-xl">Your wish:</label>
+                         <input type="text" required name="wish" id="wish" placeholder="My birth day wish" class="outline-teal-700 w-full border border-slate-300 py-2 pl-5 text-xl rounded-sm">
+                    </div>
+                    <button type="submit" class="block w-max px-6 py-3 bg-teal-700 text-white rounded-lg border-2 border-teal-700 hover:bg-white hover:text-teal-700">Send</button>
+               </form>
+          </section>
+     </main>
+
+     <footer class="bg-teal-700 text-white p-5 text-center">
+          <h3>Thank you so Much. May God richly bless you</h3>
+          <h4>&copy;copy right takop</h4>
+     </footer>
+     <div class="overlay hidden sm:hidden fixed left-0 top-0 right-0 bottom-0 opacity-75 bg-black"></div>
+     <div class="bg-white fixed border border-slate-300 top-16 right-0 w-72 h-10 items-center pl-2 justify-start after:content-[''] after:absolute after:h-full after:w-2 after:bg-green-300 after:-left-2 after:top-0 hidden" id="msg">Hello</div>
+
+     <script src="../js/script.js"></script>
+</body>
+
+</html>

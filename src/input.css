@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-404{
+     background-image: url('../images/404.png');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:80%;
+}
+
+#msg::after {
+     position: absolute;
+     content: "";
+     width: 10px;
+     left: -10px;
+     top: 0;
+     height: 100%;
+}
+
+#msg.success::after {
+     background-color: rgb(36, 161, 63);
+}
+
+#msg.error::after {
+     background-color: tomato;
+}
