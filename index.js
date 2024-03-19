@@ -26,7 +26,7 @@ server.use(bodyParser.urlencoded({
   extended: true
 }));
 
-server.use(express.static('./public'));
+server.use(express.static(path.join(__dirname,'./public')));
 
 
 
