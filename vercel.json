@@ -4,7 +4,9 @@
        { "src": "package.json", "use": "@vercel/static-build" }
      ],
      "routes": [
-       { "handle": "filesystem", "src": "/(.*\\.(json|xml|txt|css|js))", "method": "GET" },
+       { "src": "/css/(.*)", "dest": "/public/css/$1" },
+       { "src": "/images/(.*)", "dest": "/public/images/$1" },
+       { "src": "/js/(.*)", "dest": "/public/js/$1" },
        { "src": "/(.*)", "dest": "/public/$1" }
      ]
    }
