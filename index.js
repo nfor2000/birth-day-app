@@ -54,7 +54,11 @@ server.post("/sendmail", (req, res) => {
 
 
 server.get(/^(\/|\/index(?:\.html)?)$/, (req, res) => {
-  res.status(200).sendFile(path.join(__dirname, 'public', 'views', 'index.html'));
+  res.status(200).sendFile(path.join(__dirname, 'public', 'index.html'));
 });
+
+server.get('*', (req, res) => {
+     res.status(200).sendFile(path.join(__dirname, 'public', '404.html'));
+   });
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
